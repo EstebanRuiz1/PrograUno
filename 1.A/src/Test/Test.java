@@ -1,6 +1,6 @@
 package src.Test;
 
-import Models.Models;
+import src.Models.Models;
 
 public class Test {
     public static void main(String[] args) {
