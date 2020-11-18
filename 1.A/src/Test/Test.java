@@ -1,9 +1,8 @@
-package Test;
+package src.Test;
 
 import Models.Models;
 
 public class Test {
-
     public static void main(String[] args) {
         Models models = new Models();
         System.out.println("Bienvenido");

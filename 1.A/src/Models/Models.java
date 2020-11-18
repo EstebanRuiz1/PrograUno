@@ -1,4 +1,4 @@
-package Models;
+package src.Models;
 
 public class Models {
     public int compareSeconds(int hours, int minutes, int seconds, int finalHours, int finalMinutes, int finalSeconds) {
