@@ -5,7 +5,7 @@ import models.Models;
 import java.util.Scanner;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) {        //Poyo con arroz
     Scanner sc = new Scanner(System.in);
         Models models = new Models();
         System.out.println("Ingrese la Hora");
