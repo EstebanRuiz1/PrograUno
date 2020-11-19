@@ -7,7 +7,7 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Cual va a ser la longitud del juego ");
         Scanner scanner = new Scanner(System.in);
-        int num2, num1 = 0, picas = 0, fijas = 0, vidas= 1;
+        int picas = 0, fijas = 0;
         int longitude  = scanner.nextInt();
         int[] arrayOne = new int[longitude];
         int[] arrayTwo = new int[longitude];
