@@ -4,31 +4,36 @@ import java.util.Scanner;
 
 public class Test {
 
-        public static void main(String[] args) {
-            System.out.println("Cual va a ser la longitud del juego ");
-        }
+        public static void main(String[] args) {        // Arroz con pollo
             Scanner scanner = new Scanner(System.in);//pollo
-            int num2, num1 = 0, picas = 0, fijas = 0, vidas= 1;
+            int num2, num1 = 0, picas = 0, fijas = 0, vidas= 1;  //Agua
+            System.out.println("Cual va a ser la longitud del juego ");
             int longitude  = scanner.nextInt();
-            int[] userOne = new int[longitude];
-            int[] userTwo = new int[longitude];
-        public void fillList(){
-            for (int i = 0; i < longitude; i++) {
-            System.out.println("ingrese el "+i+" numero de la lista");
-                userOne[i+= scanner.nextInt();
-            }
-            for (int i = 0; i < longitude; i++) {
-                System.out.println("ingrese el "+i+" numero de la lista de adivinanza");
-                userTwo[i]=scanner.nextInt();
-            }
+            int[] Num = new int[longitude];
+            int[] Num1 = new int[longitude];
+
+
         }
-    public void setFijas(int[] userOne, int[] userTwo){
-        int fijas=0;
-        for (int i = 0; i <userOne.length; i++) {
-            if (userOne[i]==userTwo[i]){
-                fijas++;
+            // Este va ser el metodo 2
+            
+    /**
+     * Este es
+     *
+     * */
+        public void CheckRepeatedDigits(int[]arrayOne , int[]arrayTwo){
+            int counter=0;
+            for (int i = 0; i < arrayOne; i++) {
+                if(arrayOne[i] == arrayTwo[i]){         //Aca salen las fijas
+                    counter++;
+                }
+
             }
-        }
-        System.out.println("Hay actualmente "+ fijas+" Fijas");
+            for (int i = 0; i < ; i++) {
+                if (arrayOne[i] == arrayTwo[2]){        //Aca salen las
+
+                }
+            }
+
     }
+
 }
