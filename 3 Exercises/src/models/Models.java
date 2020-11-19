@@ -30,30 +30,31 @@ public class Models {
     }
 
     private void doReaumurKelvin(int data) {
-        double converted = (data-32);
+        double converted = (data/0.8)+273.15;
+        System.out.println("Re a K "+data+" → "+converted);
     }
-
     private void doKelvinRankine(int data) {
-        double converted = (data-32);
+        double converted = (data*1.8);
+        System.out.println("K a R "+data+" → "+converted);
     }
-
     private void doCelsiusKelvin(int data) {
         double converted = (data+273.15);
+        System.out.println("C a K "+data+" → "+converted);
     }
-
     private void doFarenheitKelvin(int data) {
-        double converted = (data-32)*(5/9)+273.15;
+        double converted = (data-32)*5/9+273.15;
+        System.out.println("F a K "+data+" → "+converted);
     }
-
     private void doKelvinFarenheit(int data) {
         double converted = (data-273.15)*(9/5)+32;
+        System.out.println("K a F "+data+" → "+converted);
     }
     private void doFarenheitCelsius(int data) {
         double converted = (data-32)*5/9;
-        System.out.println("F a C"+data+converted);
+        System.out.println("F a C "+data+" → "+converted);
     }
     private void doCelsiusFarenheit(int data) {
-        double converted = (data*(9/5)+32);
-        System.out.println("C a F"+data+converted);
+        double converted = (data*9/5+32);
+        System.out.println("C a F "+data+" → "+converted);
     }
 }
