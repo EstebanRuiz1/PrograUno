@@ -20,6 +20,18 @@ public class Test {
      *
      * */
         public void CheckRepeatedDigits(int[]arrayOne , int[]arrayTwo){
+            int counter=0;
+            for (int i = 0; i < arrayOne; i++) {
+                if(arrayOne[i] == arrayTwo[i]){         //Aca salen las fijas
+                    counter++;
+                }
+
+            }
+            for (int i = 0; i < ; i++) {
+                if (arrayOne[i] == arrayTwo[2]){        //Aca salen las
+
+                }
+            }
 
     }
 
