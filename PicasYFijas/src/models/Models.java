@@ -60,3 +60,4 @@ public class Models {
             arrayOne[i] = scanner.nextInt();
         }
     }
+}
