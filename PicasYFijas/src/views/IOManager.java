@@ -12,13 +12,4 @@ public class IOManager {
         System.out.println(MESSAGE_GET_LONGITUDE);
         return sc.nextInt();
     }
-    public int getFillNumbers(){
-        System.out.println(MESSAGE_GET_FIRST_ARRAY);
-        return sc.nextInt();
-    }
-    public int getAdivineNumbers(){
-        System.out.println(MESSAGE_GET_SECOND_ARRAY);
-        return sc.nextInt();
-    }
-
 }

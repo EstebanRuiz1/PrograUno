@@ -8,24 +8,22 @@ public class Models {
     int[] arrayOne;
 
     public void setArrayBase(int longitude) {
-        System.out.println("Cual va a ser la longitud del juego ");
         arrayOne = new int[longitude];
         arrayTwo = new int[longitude];
+        System.out.println("Ingrese los datos de la secuencia base");
         for (int i = 0; i < longitude; i++) {
-            System.out.println("ingrese el numero " + i + " de los numeros adivinadores");
             arrayTwo[i] = scanner.nextInt();
         }
+        System.out.println("Ingrese los datos de la secuencia adivinadora");
         for (int i = 0; i < longitude; i++) {
-            System.out.println("ingrese el numero "+i+" de los numeros ");
+            arrayOne[i] = scanner.nextInt();
         }
-        System.out.println("Ingrese el numero a jugar   ");
     }
 
     /**
      * @param longitude entra la longitud del array weno
      * @return retorna las fijas del array
      */
-
     public int verifyFijas(int longitude) {
         int fijas = 0;
         for (int i = 0; i < longitude; i++) {
@@ -38,11 +36,11 @@ public class Models {
     }
 
     /**
-     * @param longitude la longitud de 
+     * @param longitude la longitud de
      * @return picas la cantidad de picas
      */
     public int verifyPicas(int longitude) { //Verificar picas
-        int picas=0;
+        int picas = 0;
         for (int i = 0; i < longitude; i++) {
             for (int j = 0; j < longitude; j++) {
                 if (arrayTwo[i] == arrayOne[j] && arrayTwo[i] != arrayOne[i]) {
@@ -56,7 +54,7 @@ public class Models {
 
     public void baseNumbers(int longitude) {
         for (int i = 0; i < longitude; i++) {
-            System.out.println("Ingrese el numero " + i + " de los numeros a adivinar");
             arrayOne[i] = scanner.nextInt();
         }
     }
+}
