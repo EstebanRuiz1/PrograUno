@@ -36,18 +36,20 @@ public class Models {
     }
 
     /**
-     * @apiNote
+     * @param longitude la longitud de 
+     * @return picas la cantidad de picas
      */
-    public void verifyPicas(int longitude) {
-        //Verificar picas
+    public int verifyPicas(int longitude) { //Verificar picas
+        int picas=0;
         for (int i = 0; i < longitude; i++) {
             for (int j = 0; j < longitude; j++) {
                 if (arrayTwo[i] == arrayOne[j] && arrayTwo[i] != arrayOne[i]) {
-                    picas += 1;
+                    picas++;
                 }
             }
         }
         System.out.println("Picas " + picas);
+        return picas;
     }
 
     public void baseNumbers(int longitude) {
