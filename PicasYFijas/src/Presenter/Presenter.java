@@ -3,8 +3,6 @@ package Presenter;
 import models.Models;
 import views.IOManager;
 
-import java.util.Scanner;
-
 /**
  * @author Carlos Hernado Lozano
  * @author Esteban Ruiz
@@ -16,7 +14,7 @@ public class Presenter {
     Models mo = new Models();
 
     public void init() {
-        int longitude= io.getLongitude();
+        int longitude= io.getLongitude();       
         mo.setArrayBase(io.getFillNumbers());
 
     }
