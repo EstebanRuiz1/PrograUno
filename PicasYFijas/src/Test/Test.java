@@ -1,7 +1,14 @@
 package Test;
 
 import java.util.Scanner;
-
+/**
+ * @author Carlos Hernado Lozano
+ * @author Esteban Ruiz 
+ * @author Jose Misael Paez
+ * TODO: Agregen a los otros dos que me da pereza
+ * 
+ * 
+ */
 public class Test {
         Scanner scanner = new Scanner(System.in);
         int picas = 0, fijas = 0;
