@@ -7,7 +7,6 @@ import views.IOManager;
  * @author Carlos Hernado Lozano
  * @author Esteban Ruiz
  * @author Jose Misael Paez
- * TODO: Agregen a los otros dos que me da pereza
  */
 public class Presenter {
     IOManager io = new IOManager();

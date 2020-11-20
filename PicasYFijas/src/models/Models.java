@@ -60,17 +60,3 @@ public class Models {
             arrayOne[i] = scanner.nextInt();
         }
     }
-
-
-    //Este metodo es el que calcula picas y fijas
-    public void thisMethod() {              //Que chuchas es este metodo?
-        for (int i = 0; i < arrayOne.length; i++) {
-            if (arrayOne[i] == arrayTwo[i]) fijas++;
-            for (int k = 0; k < arrayOne.length; k++) {
-                int value = arrayOne[i];
-                for (int j = 0; j < arrayTwo.length; j++) if (value == arrayTwo[i]) picas++;
-            }
-        }
-    }
-
-}
