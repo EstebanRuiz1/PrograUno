@@ -26,19 +26,16 @@ public class Test {
             }
         }
         System.out.println("Dijitos fijos " + fijas);
+        //Verificar picas
         for (int i = 0; i < longitude; i++) {
             for (int j = 0; j < longitude; j++) {
-                if (arrayTwo[i] == arrayOne[j]) {
+                if (arrayTwo[i] == arrayOne[j]&&arrayTwo[i]!=arrayOne[i]) {
                     picas += 1;
                 }
             }
         }
-        //Verificar picas
         System.out.println("Picas " + picas);
-        for (int i = 0; i < longitude; i++) {
-            if (arrayOne[i] == arrayTwo[i])
-                picas++;
-        }
+
         for (int i = 0; i < arrayOne.length; i++) {
             if (arrayOne[i] == arrayTwo[i]) fijas++;
             for (int k = 0; k < arrayOne.length; k++) {
