@@ -43,6 +43,8 @@ public class Test {
                 for (int j = 0; j < arrayTwo.length; j++) if (value == arrayTwo[i]) picas++;
             }
         }
+
+    scanner.close();
     }
 
 
