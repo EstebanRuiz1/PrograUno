@@ -22,17 +22,21 @@ public class Models {
     }
 
     /**
-     * Asigna los numeros que entran desde el scanner hasta llenar el arrray
+     * 
+     * @param longitude entra la longitud del array weno
+     * @return retorna las fijas del array
+     * 
      */
 
-    public void verifyFijas(int longitude) {
-        //Verifica si son fijas
+    public int verifyFijas(int longitude) {
+        int fijas = 0;
         for (int i = 0; i < longitude; i++) {
             if (arrayTwo[i] == arrayOne[i]) {
-                fijas += 1;
+                fijas++;
             }
         }
         System.out.println("Dijitos fijos " + fijas);
+        return fijas;
     }
 
     /**
@@ -59,7 +63,9 @@ public class Models {
         }
     }
 
-    public void thisMethod() {
+
+
+    public void thisMethod() {              //Que chuchas es este metodo?
         for (int i = 0; i < arrayOne.length; i++) {
             if (arrayOne[i] == arrayTwo[i]) fijas++;
             for (int k = 0; k < arrayOne.length; k++) {
