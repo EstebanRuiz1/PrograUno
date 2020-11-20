@@ -12,4 +12,12 @@ public class IOManager {
         System.out.println(MESSAGE_GET_LONGITUDE);
         return sc.nextInt();
     }
+
+    public void showLives(int lives) {
+        System.out.println("Vidas restantes: "+lives);
+    }
+
+    public void showEndGame() {
+        System.out.println("Oh oh te has quedado sin vidas");
+    }
 }

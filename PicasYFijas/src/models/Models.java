@@ -31,7 +31,7 @@ public class Models {
                 fijas++;
             }
         }
-        System.out.println("Dijitos fijos " + fijas);
+        System.out.println("Fijas " + fijas);
         return fijas;
     }
 
