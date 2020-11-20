@@ -26,7 +26,7 @@ public class Test {
             }
         }
         System.out.println("Dijitos fijos " + fijas);
-        //Verificar picas
+        //Verificar picasfdshjklfasdkhljsdfajklfsdkjañlkñljfa
         for (int i = 0; i < longitude; i++) {
             for (int j = 0; j < longitude; j++) {
                 if (arrayTwo[i] == arrayOne[j]&&arrayTwo[i]!=arrayOne[i]) {
