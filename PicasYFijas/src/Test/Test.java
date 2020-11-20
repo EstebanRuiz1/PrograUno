@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import java.util.Scanner;
 
@@ -21,10 +21,8 @@ public class Test {
         }
         //Verifica si son fijas
         for (int i = 0; i < longitude; i++) {
-            for (int j = 0; j < longitude; j++) {
-                if (arrayTwo[j] == arrayOne[i]) {
+                if (arrayTwo[i] == arrayOne[i]) {
                     fijas += 1;
-                }
             }
         }
         System.out.println("Dijitos fijos " + fijas);
