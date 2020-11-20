@@ -22,10 +22,8 @@ public class Models {
     }
 
     /**
-     * 
      * @param longitude entra la longitud del array weno
      * @return retorna las fijas del array
-     * 
      */
 
     public int verifyFijas(int longitude) {
