@@ -29,6 +29,10 @@ public class Models {
         System.out.println("Ingrese el numero a jugar   ");
     }
 
+    /**
+     * Asigna los numeros que entran desde el scanner hasta llenar el arrray
+     */
+
     public void verifyFijas() {
         //Verifica si son fijas
         for (int i = 0; i < longitude; i++) {
@@ -39,6 +43,9 @@ public class Models {
         System.out.println("Dijitos fijos " + fijas);
     }
 
+    /**
+     * @apiNote
+     */
     public void verifyPicas() {
         //Verificar picas
         for (int i = 0; i < longitude; i++) {
