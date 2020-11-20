@@ -27,7 +27,7 @@ public class Test {
                 }
             }
         }
-        System.out.println("Dijitos fijos" + fijas);
+        System.out.println("Dijitos fijos " + fijas);
         for (int i = 0; i < longitude; i++) {
             for (int j = 0; j < longitude; j++) {
                 if (arrayTwo[i] == arrayOne[j]) {
@@ -36,7 +36,7 @@ public class Test {
             }
         }
         //Verificar picas
-        System.out.println("Picas" + picas);
+        System.out.println("Picas " + picas);
         for (int i = 0; i < longitude; i++) {
             if (arrayOne[i] == arrayTwo[i])
                 picas++;
