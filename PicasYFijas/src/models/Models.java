@@ -62,7 +62,7 @@ public class Models {
     }
 
 
-    //Este metodo no sirve pa nada
+    //Este metodo es el que calcula picas y fijas
     public void thisMethod() {              //Que chuchas es este metodo?
         for (int i = 0; i < arrayOne.length; i++) {
             if (arrayOne[i] == arrayTwo[i]) fijas++;
