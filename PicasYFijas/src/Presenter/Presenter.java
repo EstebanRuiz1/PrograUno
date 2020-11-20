@@ -14,6 +14,7 @@ public class Presenter {
 
     public void init() {
         int longitude = io.getLongitude();
+        io.showLongitude(longitude);
         int lives = 7;
         do {
             for (int i = 0; i <= lives; i++) {

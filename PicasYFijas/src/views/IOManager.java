@@ -12,7 +12,9 @@ public class IOManager {
         System.out.println(MESSAGE_GET_LONGITUDE);
         return sc.nextInt();
     }
-
+    public void showLongitude(int longitude){
+        System.out.println("La longitud de tu juego es de: "+longitude);
+    }
     public void showLives(int lives) {
         System.out.println("Vidas restantes: "+lives);
     }
