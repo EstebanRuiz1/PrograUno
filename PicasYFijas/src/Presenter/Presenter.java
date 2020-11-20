@@ -13,7 +13,7 @@ public class Presenter {
     Models mo = new Models();
 
     public void init() {
-        int longitude= io.getLongitude();       
+        int longitude = io.getLongitude();       
         mo.setArrayBase(io.getFillNumbers());
 
     }
