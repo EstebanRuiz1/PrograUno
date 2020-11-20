@@ -16,6 +16,7 @@ public class Test {
             arrayOne[i] = scanner.nextInt();
         }
         for (int i = 0; i < longitude; i++) {
+            System.out.println("Ingrese el numero a jugar");
             System.out.println("ingrese el numero " + i + " de los numeros adivinadores");
             arrayTwo[i] = scanner.nextInt();
         }
