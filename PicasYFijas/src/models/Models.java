@@ -7,16 +7,19 @@ public class Models {
     int[] arrayTwo;
     int[] arrayOne;
 
-    public void setArrayBase(int longitude) {
+    public void convertIntToByte(int base, int longitude) {
         arrayOne = new int[longitude];
-        arrayTwo = new int[longitude];
-        System.out.println("Ingrese los datos de la secuencia base");
-        for (int i = 0; i < longitude; i++) {
-            arrayTwo[i] = scanner.nextInt();
+        String stringBase = Integer.toString(base);
+        for (int i = 0; i < stringBase.length(); i++) {
+            arrayOne[i] = stringBase.charAt(i) - '0';
         }
-        System.out.println("Ingrese los datos de la secuencia adivinadora");
-        for (int i = 0; i < longitude; i++) {
-            arrayOne[i] = scanner.nextInt();
+    }
+
+    public void convertAdivinatorByte(int adivinator, int longitude) {
+        arrayTwo = new int[longitude];
+        String stringAd = Integer.toString(adivinator);
+        for (int i = 0; i < stringAd.length(); i++) {
+            arrayTwo[i] = stringAd.charAt(i) - '0';
         }
     }
 

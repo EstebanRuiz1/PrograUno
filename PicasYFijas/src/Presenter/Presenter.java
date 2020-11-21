@@ -16,16 +16,14 @@ public class Presenter {
         int longitude = io.getLongitude();
         io.showLongitude(longitude);
         int lives = 7;
-        do {
-            for (int i = 0; i <= lives; i++) {
-                mo.setArrayBase(longitude);
-                mo.verifyPicas(longitude);
-                mo.verifyFijas(longitude);
-                lives--;
-                io.showLives(lives);
-            }
-
-        } while (lives > 0);
+        mo.convertIntToByte(io.getBase(), longitude);
+        do for (int i = 0; i <= lives; i++) {
+            mo.convertAdivinatorByte(io.getAdivinator(), longitude);
+            mo.verifyPicas(longitude);
+            mo.verifyFijas(longitude);
+            --lives;
+            io.showLives(lives);
+        } while (lives > 0 );
         io.showEndGame();
 
     }
