@@ -29,6 +29,8 @@ public class Models {
     }
 
     /**
+     * @todo Esta vaina checa que no haya numeros repetidos dentro del primer array, que es el array base
+     * Si encuentra debería salirse del codigo
      * @param longitude
      * @return trueOrFalse
      */
