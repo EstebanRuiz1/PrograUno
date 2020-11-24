@@ -26,7 +26,6 @@ public class Presenter {
                     break;
                 case 4:
                     fourOption();
-                    init();
                     break;
             }
 
@@ -34,15 +33,17 @@ public class Presenter {
     }
 
     public void firstOption() {
-
-        io.showOne(mo.validateDates(io.getInt(), io.getInt(), io.getInt()));
+        int year = io.getInt();
+        int month = io.getInt();
+        int day = io.getInt();
+        mo.validateDates(year, month, day);
 
     }
     private void secondOption() {
-
+        mo.verifyMinorDate();
     }
     private void thirdOption(){
-
+        
     }
     private  void fourOption(){
 
