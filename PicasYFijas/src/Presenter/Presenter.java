@@ -23,7 +23,7 @@ public class Presenter {
             mo.verifyFijas(longitude);
             --lives;
             io.showLives(lives);
-        } while (lives > 0 );
+        } while (lives > 0 && mo.checkNoRepeated(longitude) == true);
         io.showEndGame();
 
     }

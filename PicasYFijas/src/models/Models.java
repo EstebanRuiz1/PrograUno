@@ -15,6 +15,11 @@ public class Models {
         }
     }
 
+    /**
+     * @param adivinator
+     * @return convierte la cadena de String a Byte
+     */
+
     public void convertAdivinatorByte(int adivinator, int longitude) {
         arrayTwo = new int[longitude];
         String stringAd = Integer.toString(adivinator);
@@ -22,6 +27,23 @@ public class Models {
             arrayTwo[i] = stringAd.charAt(i) - '0';
         }
     }
+
+    /**
+     * @param longitude
+     * @return trueOrFalse
+     */
+    public boolean checkNoRepeated(int longitude) {
+        boolean booleanData = true;
+        for (int i = 0; i < longitude; i++) {
+            for (int j = 0; j < longitude; j++) {
+                if (arrayOne[i] == arrayOne[j]) {
+                    booleanData = false;
+                }
+            }
+        }
+        return booleanData;
+    }
+
 
     /**
      * @param longitude entra la longitud del array weno
