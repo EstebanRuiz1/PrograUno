@@ -40,6 +40,7 @@ public class Models {
             for (int j = 0; j < longitude; j++) {
                 if (arrayOne[i] == arrayOne[j]) {
                     booleanData = false;
+                    checkNoRepeated(longitude);
                 }
             }
         }
