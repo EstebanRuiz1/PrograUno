@@ -7,7 +7,7 @@ public class Models {
     int[] arrayTwo;
     int[] arrayOne;
 
-    public void convertIntToByte(int base, int longitude) {
+    public void convertIntToByte(int base, int longitude) { 
         arrayOne = new int[longitude];
         String stringBase = Integer.toString(base);
         for (int i = 0; i < stringBase.length(); i++) {

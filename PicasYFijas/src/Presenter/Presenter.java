@@ -9,10 +9,10 @@ import views.IOManager;
  * @author Jose Misael Paez
  */
 public class Presenter {
-    IOManager io = new IOManager();
+    IOManager io = new IOManager(); //Crea objetos para las otras clases
     Models mo = new Models();
 
-    public void init() {
+    public void init() {        
         int longitude = io.getLongitude();
         io.showLongitude(longitude);
         int lives = 7;
