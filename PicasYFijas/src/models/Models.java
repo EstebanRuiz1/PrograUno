@@ -7,7 +7,7 @@ public class Models {
     int[] arrayTwo;
     int[] arrayOne;
 
-    public void convertIntToByte(int base, int longitude) { 
+    public void convertIntToByte(int base, int longitude) {
         arrayOne = new int[longitude];
         String stringBase = Integer.toString(base);
         for (int i = 0; i < stringBase.length(); i++) {
@@ -29,22 +29,21 @@ public class Models {
     }
 
     /**
-     * @todo Esta vaina checa que no haya numeros repetidos dentro del primer array, que es el array base
-     * Si encuentra debería salirse del codigo
      * @param longitude
      * @return trueOrFalse
+     * @todo Esta vaina checa que no haya numeros repetidos dentro del primer array, que es el array base
+     * Si encuentra debería salirse del codigo
      */
-    public boolean checkNoRepeated(int longitude) {
-        boolean booleanData = true;
+    public void checkNoRepeated(int longitude) {
         for (int i = 0; i < longitude; i++) {
+            arrayOne[i] = (int) ((Math.random() * longitude) + 0);
             for (int j = 0; j < longitude; j++) {
                 if (arrayOne[i] == arrayOne[j]) {
-                    booleanData = false;
-                    checkNoRepeated(longitude);
+                    do arrayOne[i] = (int) ((Math.random() * longitude) + 0);
+                    while (arrayOne[i] != arrayOne[j]);
                 }
             }
         }
-        return booleanData;
     }
 
 
